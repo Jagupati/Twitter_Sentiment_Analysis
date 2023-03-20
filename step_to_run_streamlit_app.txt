@@ -1,0 +1,50 @@
+import all libraries given below:-
+snscrape
+textblob 
+wordcloud
+pandas
+streamlit
+re
+matplotlib.pyplot
+plotly.express
+PIL
+seaborn
+langid
+langdetect
+nltk
+datetime
+
+step1:-
+
+	pip install pipenv 
+	pipenv install streamlit pandas
+	pip install -r requrements.txt
+	pipenv shell
+
+Step 2: Import all libraries mention in requriment.txt file
+Step 3: Save streamlit code as app.py file.
+
+Step 4: To run streamlit simply on terminal change directory to file location then type command streamlit run app.py  and press enter OR 	in terminal on existing location enter streamlit run full_path_of_file_location/app.py and press enter. It will generate an URL and 	move to browser. In Browser we see localhost_no. and app UI interface.
+
+
+ 
+
+
+**************************Here are some steps you can try to resolve if any issue facing***********************************************
+
+issue 1)	The error message suggests that the locking process has failed due to a resolution failure. This could be caused by a mismatch 		in sub-dependencies, which can often occur when different packages require different versions of the same package.
+
+Solution:-	Check your pipenv version and make sure it's up to date with the latest version.
+		Run the command pipenv lock --pre to install any pre-release dependencies that may be causing the issue.
+		Run the command pipenv clean to remove any cached dependencies.
+		Run the command pipenv install --skip-lock to bypass the locking mechanism and install the packages without locking them.
+		Run the command pipenv graph to inspect the dependencies and their versions to help identify any mismatches.
+
+Issue&Solution2) If none of the above steps work, try creating a new virtual environment and installing the packages again. This can often 			solve issues caused by conflicting dependencies in the current environment.
+
+Issue&Solution 3)If there is a scrapperexception error, try updating snscrape(if snscrape  is not upto date then uninstall and install updated 		version of  snscrape And run streamlit App again following above step).
+
+Issue in requrement.txt run dependencies library without version mention example:-if there is library like altair==4.1.0 not supporting then (pip install altair) only
+
+
+
